@@ -1,0 +1,2 @@
+Controllers : Le contrôleur contient exclusivement du PHP. 
+C'est notamment lui qui détermine si le visiteur a le droit de voir la page ou non
