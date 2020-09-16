@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MyEntrepriseController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+{%for users in data %}
+
+
+        
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Article</th>
+      <th scope="col">Contenu</th>
+      <th scope="col">image</th>
+      <th scope="col">DATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{users.title}}</th>
+      <td>{{users.content}}</td>
+      <td>{{users.image}}</td>
+      
+    </tr>
+  </tbody>
+</table>
+
+{% endfor%}
+</div>
+{% endblock %}

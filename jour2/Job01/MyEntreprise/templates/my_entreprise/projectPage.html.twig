@@ -43,11 +43,15 @@
     </form>
   </div>
 </nav>
-
-        {% endblock %}
+{% endblock %}
         </header>
     <body>
         {% block body %}
+
+        {%for users in data %}
+       
+        {% endfor%}
+
         {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
